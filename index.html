@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devbhomi Yuwa Sangathan</title>
+</head>
+<body>
+    <p class="header">DEVBHOOMI YUWA SANGATHAN</p>
+    <div id="img-container">
+        <img src="./images/main.jpeg" alt="main" class="main-img">
+        <img src="./images/upi.jpeg" alt="upi" class="upi-img">
+    </div>
+    <br><br>
+    <div id="form-container">
+        <form action="https://formspree.io/f/xjvnrqgn" method="post" id="form">
+            <div id="components">
+                <div>
+                    <label for="username">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Name" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="username">Father's Name</label>
+                    <input type="text" id="fathers-name" name="Fathers-Name" placeholder="Father's Name" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" maxlength="100" placeholder ="Enter home address" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="transactionId">Transaction ID:</label>
+                    <input type="text" id="transactionId" name="transactionId" pattern="[0-9]{10,}" placeholder="GPay transaction ID" required>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="button-container">
+                    <button type="submit" id="button">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer id="black-footer">
+        <p>Ashish Nautiyal</p>
+        <p>Devbhomi Yuva Sangathan</p>
+        <p>Phone number : 9808372656</p>
+    </footer>
+</body>
+</html>
